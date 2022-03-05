@@ -56,7 +56,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseCurrentStationIfLimit() {
+    public void shouldDecreaseCurrentStationLimit() {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
         radio.decreaseCurrentStation();
@@ -66,7 +66,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseCurrentStationIfUnderLimit() {
+    public void shouldDecreaseCurrentStationUnderLimit() {
         Radio radio = new Radio();
         radio.setCurrentStation(-10);
         radio.decreaseCurrentStation();
@@ -86,7 +86,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseCurrentVolumeIfOverLimit() {
+    public void shouldIncreaseCurrentVolumeOverLimit() {
         Radio radio = new Radio();
         radio.setCurrentVolume(100);
         radio.increaseCurrentVolume();
@@ -106,7 +106,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseCurrentVolumeIfUnderLimit() {
+    public void shouldDecreaseCurrentVolumeUnderLimit() {
         Radio radio = new Radio();
         radio.setCurrentVolume(-100);
         radio.decreaseCurrentVolume();
