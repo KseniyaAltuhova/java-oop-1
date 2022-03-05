@@ -9,8 +9,8 @@ public class RadioTest {
     @Test
     public void shouldSetRequiredStation() {
         Radio radio = new Radio();
-        radio.setCurrentStation(7);
-        int expected = 7;
+        radio.setCurrentStation(6);
+        int expected = 6;
 
         assertEquals(expected, radio.getCurrentStation());
     }
@@ -38,7 +38,7 @@ public class RadioTest {
     @Test
     public void shouldIncreaseCurrentStationIfOverLimit() {
         Radio radio = new Radio();
-        radio.setCurrentStation(13);
+        radio.setCurrentStation(14);
         radio.increaseCurrentStation();
         int expected = 0;
 
